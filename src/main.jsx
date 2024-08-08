@@ -8,6 +8,7 @@ const routes = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
+      { index: true, element: <p>home</p> },
       { path: "home", element: <p>home</p> },
       { path: "about", element: <p>about</p> },
       { path: "*", element: <p>404</p> },
